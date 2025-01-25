@@ -1,0 +1,6 @@
+{
+	"name": "@mastermakrela/bun-plugin-c",
+	"version": "0.0.2",
+	"license": "MIT",
+	"exports": "./dist/plugin.js"
+}
