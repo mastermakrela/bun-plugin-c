@@ -7,7 +7,6 @@ const _c_plugin = {
 	target: "bun",
 	setup: function (build: PluginBuilder): void | Promise<void> {
 		build.onLoad({ filter: /\.c$/ }, async (args) => {
-			console.log(`🦔 ~ file: plugin.ts:10 ~ build.onLoad ~ args:`, args);
 			const symbols = await extract_symbols(args.path);
 
 			const { symbols: exports } = cc({
@@ -17,7 +16,7 @@ const _c_plugin = {
 
 			const __types = type_helper_for(symbols);
 
-			console.log(`
+			console.info(`
 Imported ${args.path} with following functions:
 
 import _lib from "${args.path}";

@@ -7,7 +7,7 @@
 	"description": "Bun plugin for importing C files directly",
 	"main": "./dist/plugin.js",
 	"scripts": {
-		"build": "bun build src/plugin.ts --outdir dist --target bun"
+		"build": "bun build src/plugin.ts --outdir dist --target bun --minify"
 	},
 	"repository": {
 		"type": "git",
